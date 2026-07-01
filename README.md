@@ -40,7 +40,7 @@ url-shortener/
 
 ```bash
 # clone and enter the repo
-git clone https://github.com/<your-username>/url-shortener.git
+git clone https://github.com/RamjeU/url-shortener.git
 cd url-shortener
 
 # create a virtual environment
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-Server runs at `http://localhost:5000`.
+Server runs at `http://localhost:5001`.
 
 ## API Usage
 
