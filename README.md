@@ -60,7 +60,7 @@ Server runs at `http://localhost:5001`.
 
 **Shorten a URL**
 ```bash
-curl -X POST http://localhost:5000/api/shorten \
+curl -X POST http://localhost:5001/api/shorten \
   -H "Content-Type: application/json" \
   -d '{"url": "https://www.example.com/some/very/long/path"}'
 ```
@@ -69,20 +69,20 @@ Response:
 ```json
 {
   "short_code": "aZ3kQ1",
-  "short_url": "http://localhost:5000/aZ3kQ1",
+  "short_url": "http://localhost:5001/aZ3kQ1",
   "original_url": "https://www.example.com/some/very/long/path"
 }
 ```
 
 **Visit the short URL**
 ```bash
-curl -L http://localhost:5000/aZ3kQ1
+curl -L http://localhost:5001/aZ3kQ1
 # redirects to the original URL
 ```
 
 **Check stats**
 ```bash
-curl http://localhost:5000/api/stats/aZ3kQ1
+curl http://localhost:5001/api/stats/aZ3kQ1
 ```
 
 Response:
